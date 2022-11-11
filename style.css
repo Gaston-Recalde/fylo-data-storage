@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -50,17 +51,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: hsl(229, 57%, 11%);
+    background-color: hsl(229, 57%, 11%);
     padding: 12px;
     height: 50px;
     border-radius: 10px;
 }
 
+.image-container:hover{
+    background-color: rgb(12, 18, 44, 50%);
+}
+
 .info{
-    background: hsl(228, 56%, 26%);
+    background-color: hsl(228, 56%, 26%);
     padding: 35px;
     width: 100%;
-    height: 150px;
+    height: 175px;
     margin-bottom: 15px;
     border-radius: 10px;
 }
@@ -81,7 +86,7 @@ body{
     align-items: center;
     width: 100%;
     height: 20px;
-    background: hsl(229, 57%, 11%);
+    background-color: hsl(229, 57%, 11%);
     border-radius: 10px;
 }
 
@@ -120,6 +125,7 @@ body{
     text-align: center;
     border-radius: 10px;
     margin-left: 37px;
+    margin-top: 20px;
 }
 
 .left-gb span{
@@ -138,43 +144,50 @@ body{
 }
 
 
-.attribution { color: white; font-size: 11px; text-align: center; margin-top: 25px; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { color: white; font-size: 11px; text-align: center; margin-top: 50px; }
+.attribution a { color: hsl(228, 68%, 66%); }
 
-@media screen  and (min-width: 1080px){
+@media screen  and (min-width: 1024px) {
     body{
         background-image: url('./images/bg-desktop.png');
         background-color: hsl(229, 57%, 11%);
-        background-size:inherit;
-        background-position: bottom;
+        background-size: 100% 50%;
+        background-position: bottom left;
+        width: 100%;
     }
+
     .container{
-        display: flex;
         flex-direction: row;
         align-items: flex-end;
-        width: 65%;
+        width: 100%;
     }
+
     .logos{
         width: 350px;
         margin-right: 35px;
     }
+
     .info{
         width: 550px;
         padding: 35px 45px 35px;
     }
+
     .bar__progress{
         width: 75%;
     }
+
     .point{
         position:relative;
         left: 332px;
         top: 1px;
     }
+
     .left-gb{
         position: relative;
         top: -155px;
         left: 247px;
     }
+
     .left-gb::after{
         content:'';
         position: absolute;
