@@ -47,7 +47,7 @@ body{
     height: 70px;
 }
 
-.image-container{
+.image__container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body{
     border-radius: 10px;
 }
 
-.image-container:hover{
+.image__container:hover{
     background-color: rgb(12, 18, 44, 50%);
 }
 
@@ -118,7 +118,7 @@ body{
     margin-top: 10px;
 }
 
-.left-gb{
+.left__gb{
     background: #FFF;
     width: 175px;
     height: 65px;
@@ -128,14 +128,14 @@ body{
     margin-top: 20px;
 }
 
-.left-gb span{
+.left__gb span{
     color: hsl(229, 57%, 11%);
     font-size: 38px;
     font-weight: 700;
     margin-right: 10px;
 }
 
-.left-gb p{
+.left__gb p{
     padding-top: 10px;
     color: hsl(229, 7%, 55%);
     font-weight: 700;
@@ -182,13 +182,13 @@ body{
         top: 1px;
     }
 
-    .left-gb{
+    .left__gb{
         position: relative;
         top: -155px;
         left: 247px;
     }
 
-    .left-gb::after{
+    .left__gb::after{
         content:'';
         position: absolute;
         right: 0;
